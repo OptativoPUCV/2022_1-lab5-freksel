@@ -66,10 +66,10 @@ TreeNode * minimum(TreeNode * x){
 
     while(x!= NULL){
         x=x->left;
+        if(x->left==NULL){
+            return x;
+        }
     }
-    x=x->parent;
-    return x;
-
 }
 
 
