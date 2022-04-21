@@ -69,7 +69,7 @@ TreeNode * minimum(TreeNode * x){
     while(x!= NULL){
         x=x->left;
         if(x->left==NULL){
-            return x->pair->key;
+            return x;
         }
     }
 }
