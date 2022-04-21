@@ -122,3 +122,9 @@ ju., 21 de abr. de 2022 12:19:42:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b3624a1
+ju., 21 de abr. de 2022 12:20:55: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|5
+total_score: 20/70
+d810579
