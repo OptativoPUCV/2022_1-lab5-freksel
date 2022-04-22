@@ -95,15 +95,15 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     else{
         if(node->left==NULL){
-            if(is_equal (tree,node->parent->left,tree->current)==1){
+            if(tree->lower_than (node->parent->pair->key,tree->current)==1){
                 node->parent->left=node->right;
             }
             else{
-            node->parent->right=node->right;
+            node->parent->left=node->right;
             }
         }
         else{
-            if(is_equal (tree,node->parent->left,tree->current)==1){
+            if(tree->lower_than (node->parent->pair->key,tree->current)==1){
                 node->parent->left=node->left;
             }
             else{
