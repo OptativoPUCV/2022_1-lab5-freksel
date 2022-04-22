@@ -146,6 +146,11 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
+    TreeNode* x=tree->current;
+    x=searchTreeMap(tree,key);
+    if(x!=NULL){
+        return x->pair; 
+    }
     return NULL;
 }
 
@@ -155,9 +160,6 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    if(tree->current==NULL){
-        return NULL;
-    }
     if (tree->current->right!=NULL) {
         minimum(tree->current->right);
         return tree->current->pair;
