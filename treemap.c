@@ -104,10 +104,10 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         }
         else{
             if(tree->lower_than (node->parent->pair->key,tree->current)==1){
-                node->parent->left=node->left;
+                node->parent->right=node->left;
             }
             else{
-                node->parent->left=node->right;
+                node->parent->right=node->right;
             }
         }
     }
