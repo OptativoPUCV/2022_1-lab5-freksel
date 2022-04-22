@@ -160,7 +160,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         while(tree->lower_than(aux->pair->key,tree->current)==1){
             tree->current=tree->current->parent;
         }
-        return tree->current;
+        return tree->current->pair;
         //tree->current==tree->current->parent;
     }
     else if(tree->current->right!=NULL) {

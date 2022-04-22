@@ -245,3 +245,9 @@ treemap.c:163:20: error: return from incompatible pointer type [-Werror=incompat
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a1e3c7c
+vi., 22 de abr. de 2022 12:29:39: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|3
+total_score: 40/70
+415b148
