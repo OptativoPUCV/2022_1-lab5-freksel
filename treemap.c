@@ -164,7 +164,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         while(tree->lower_than(tree->current->pair->key,aux->pair->key)==1){
             tree->current=tree->current->parent;
         }
-        return tree->current->pair;
+        return tree->current->pair->key;
         //tree->current==tree->current->parent;
     }
         
