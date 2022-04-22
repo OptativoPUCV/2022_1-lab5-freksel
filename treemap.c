@@ -146,10 +146,9 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-    TreeNode* x=tree->current;
-    x->pair=searchTreeMap(tree,key);
-    if(x->pair!=NULL){
-        return NULL; 
+    Pair* x=searchTreeMap(tree,key);
+    if(x!=NULL){
+        return x; 
     }
     return NULL;
 }
