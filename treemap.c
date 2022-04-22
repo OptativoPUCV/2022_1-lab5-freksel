@@ -150,14 +150,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
     if(x!=NULL){
         return x; 
     }
-    if(tree->lower_than(tree->current->pair->key,key)==1){
-        tree->current->left=key;
-        return key;
-    }
-    else{
-        tree->current->right=key;
-        return key;
-    }
+    Pair* p=nextTreeMap(tree);
+    return p;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
