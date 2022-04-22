@@ -165,14 +165,13 @@ Pair * nextTreeMap(TreeMap * tree) {
         minimum(tree->current->right);
         return tree->current->pair;
     }
-    else{
+    else if(tree->current->left ==NULL && tree->current->right==NULL){
         while(aux->parent!=NULL){
             if((tree->lower_than(aux->parent->pair->key,tree->current->pair->key)==1)){
-            aux=aux->parent;
+                return aux->pair;
             }
             if(tree->lower_than(tree->current->pair->key,aux->parent->pair->key)==1){    
-                tree->current=aux;
-                return aux->pair;
+               aux=aux->parent;
             }
         }
     }
