@@ -149,7 +149,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode* x=tree->current;
     x->pair=searchTreeMap(tree,key);
     if(x->pair!=NULL){
-        return x->pair; 
+        return NULL; 
     }
     return NULL;
 }
