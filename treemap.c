@@ -161,11 +161,11 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     else if(tree->current->left ==NULL && tree->current->right==NULL){
         TreeNode* aux=tree->current;
-        while(tree->lower_than(tree->current->pair->key,aux->pair->key)==1){
-            tree->current=tree->current->parent;
+        while(tree->lower_than(aux->pair->key,tree->current->pair->key)==1){
+            aux=aux->parent;
         }
-        return tree->current->pair->key;
-        //tree->current==tree->current->parent;
+        tree->current=aux;
+        return aux->pair;
     }
         
 
