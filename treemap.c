@@ -165,8 +165,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         return minimum(aux->right)->pair;
     }
     else{
-        while(aux->parent!=NULL){
-            prinf("%d",*(int*) aux->pair->key);
+        while(aux->parent!=NULL || aux->pair->key==tree->root->pair->key){
             if(tree->lower_than(aux->parent->pair->key,tree->current->pair->key)==1){
                 aux=aux->parent;
             }
