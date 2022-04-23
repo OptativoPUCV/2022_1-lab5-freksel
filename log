@@ -507,3 +507,14 @@ sá., 23 de abr. de 2022 11:41:01:
  tests:  20|3
 total_score: 45/70
 61e93a7
+sá., 23 de abr. de 2022 11:55:45: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'nextTreeMap':
+treemap.c:169:13: error: implicit declaration of function 'pritnf' [-Werror=implicit-function-declaration]
+             pritnf("%d",*(int*) aux->pair->key);
+             ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+441a95d
