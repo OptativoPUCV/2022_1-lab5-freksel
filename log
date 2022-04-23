@@ -578,3 +578,9 @@ treemap.c:165:36: error: expected ')' before 'aux'
                                     ^~~
 Compilation failed
 6e09dc9
+sá., 23 de abr. de 2022 14:15:33: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  20|3
+total_score: 45/70
+f580f26
