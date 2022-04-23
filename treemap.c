@@ -173,7 +173,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             }
             else{// if(tree->lower_than(tree->current->pair->key,aux->parent->pair->key)==1){
                 tree->current=aux;    
-                return aux->parent->pair;
+                return aux->pair;
             }
         }
     }
