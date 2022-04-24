@@ -155,10 +155,14 @@ Pair * upperBound(TreeMap * tree, void* key) {
       return tree->current->pair;  
     }
     else{
-        Pair* p=nextTreeMap(tree);
-        printf("key: %d\n",*(int*) p->key);
-        return p;
+        if(tree->lower_than(key,tree->current->pair->key)==0){
+            Pair* p=nextTreeMap(tree);
+            printf("key: %d\n",*(int*) p->key);
+            return p;
+        }
     }
+    return NULL;
+
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
