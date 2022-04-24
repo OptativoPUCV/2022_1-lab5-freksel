@@ -899,3 +899,9 @@ treemap.c:40:18: error: initialization from incompatible pointer type [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 118f138
+do., 24 de abr. de 2022 14:35:28: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  29|0
+total_score: 70/70
+a52ca29
