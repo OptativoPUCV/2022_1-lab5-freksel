@@ -176,6 +176,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
     }
     if(aux->parent!=NULL && (tree->lower_than(tree->current->pair->key,aux->parent->pair->key)==1)){
+        printf("key: %d\n",*(int*) aux->pair->key);
         tree->current=aux->parent;
         return aux->parent->pair;
     }
