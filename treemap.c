@@ -151,10 +151,12 @@ Pair * upperBound(TreeMap * tree, void* key) {
         return x; 
     }
     printf("key: %d\n",*(int*) tree->current->pair->key);
-    return tree->current->pair;
-    //Pair* p=nextTreeMap(tree);
-    //printf("key: %d\n",*(int*) p->key);
-    //return p;
+    if(tree->lower_than(key,tree->current->pair->key)==1){
+      return tree->current->pair;  
+    }
+    Pair* p=nextTreeMap(tree);
+    printf("key: %d\n",*(int*) p->key);
+    return p;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
