@@ -167,8 +167,9 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     while(tree->current->parent!=NULL){
         printf("key: %d\n",*(int*) tree->current->pair->key);
-        if(tree->lower_than(aux->pair->key,tree->current->parent->pair->key)==1){    
-            return tree->current->parent->pair;
+        if(tree->lower_than(aux->pair->key,tree->current->parent->pair->key)==1){
+            tree->current=tree->current->parent->pair;    
+            return tree->current->pair;
         }
         tree->current=tree->current->parent;
         if(tree->current->parent->pair->key==NULL){
