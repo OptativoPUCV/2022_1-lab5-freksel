@@ -877,3 +877,14 @@ do., 24 de abr. de 2022 13:27:23:
  tests:  26|1
 total_score: 65/70
 ac63d82
+do., 24 de abr. de 2022 14:10:30: 
+ treemap.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+test.c: In function 'createTreeMap':
+treemap.c:41:17: error: 'new' is used uninitialized in this function [-Werror=uninitialized]
+     new->current=NULL;
+                 ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f37eec1
